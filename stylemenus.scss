@@ -1,0 +1,435 @@
+/*---------------------------PAGES CSS DES MENUS---------------------------*/
+ 
+/* Couleurs/Polices principales du thème*/
+
+$primary-color : #4e9182;
+$maintext-color : #f0c92e;
+$font-main:'Montserrat';
+$font-enchante : 'Devonshire';
+$font-chic : 'Croissant One';
+$font-french:'Cantata One';
+$font-papilles :'Dancing Script';
+$font-gout:'Kaushan Script';
+$font-menu:'Kalam';
+
+/* Mise en page générale du thème*/
+
+.block-menu {
+    box-shadow: 0 0 20px #bababa;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin:3em;
+    padding: 6em;
+}
+
+.section-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top:2em;
+}
+
+.titre-menu {
+   font-size: 2em;
+   margin:0em;
+}
+
+
+.ligne-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right:3em;
+    
+    p {
+        font-family: $font-menu;
+        font-size: 1.2em; 
+    }
+ 
+    .prix {
+        font-weight: bold;
+    }
+}
+
+img {
+    width:33%;
+    height:auto;   
+}
+
+.img-flipped {
+    transform: scaleX(-1);
+}
+
+/*---------------------------PAGE MENU---------------------------*/
+/*---------------------La note enchantée------------------------*/
+
+.menu-enchante {
+    background-color: #ffe7e6;
+
+    h3 {
+        font-size:1.6em;
+    }
+
+    .ligne-menu {
+        padding-left: 0em;
+        padding-right:0em;
+    }
+
+    .menu-enchante-titre {
+        font-family: $font-enchante;
+        letter-spacing: 0.1em;
+
+        .icon-music {
+            display: block     /*Afin de limiter l'ecart sans faire br*/
+        }
+    }
+
+   .fa-music {
+       background: linear-gradient(to right, #f26fa4 0%, #ff8d00 100%);
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-text-fill-color: transparent;    
+   }
+
+   .menu-enchante-sous-titre {
+        font-family: $font-menu;
+        color:black;
+    }
+
+   .menu-enchante-fin {
+        font-family: $font-enchante;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+
+        .icon-music {
+            display: block   
+        }
+
+        .fa-music {
+            background: linear-gradient(to right, #f26fa4 0%, #ff8d00 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;      
+        }
+    } 
+}
+
+/*----------------------------PAGE MENU-------------------------------*/
+ /*-----------------------Le chic à la française--------------------*/
+
+.menu-chic {
+   background-color: #faf0ff;
+
+   .menu-chic-titre {
+        font-family: $font-chic ;
+        background: linear-gradient(to right, #ff8d00 0%, #9600ff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+   .menu-chic-sous-titre {
+        font-family: $font-french;     
+    }
+
+    h3 {
+        font-size:1.1em;
+    }
+
+    .chic-part1 {
+        color :#ff8d00;
+    }
+ 
+    .chic-part2 {
+        color:#d307cf;
+    }
+ 
+    .chic-part3 {
+        color: #9600ff ;
+    }
+ 
+    img {
+        height: 15px;
+    }  
+}
+
+/*----------------------------PAGE MENU-------------------------------*/
+ /*-----------------------Le délice des papilles--------------------*/
+
+ .menu-papilles {
+   background-color:#ebebeb; 
+   font-family: $font-menu;
+
+    .menu-papilles-titre {
+        font-family: $font-papilles;
+        font-size: 4em;   
+    }
+
+    h2 {
+        background: linear-gradient(to right, #1255e3 0%, #12d3e3 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+        font-size:1.6em;
+    }
+ }
+
+/*----------------------------PAGE MENU-------------------------------*/
+ /*-----------------------La palette du goût------------------------------*/
+
+ .menu-gout {
+   background-color:#ebebeb; 
+   font-family: $font-menu;
+
+    .menu-gout-titre{
+        font-family: $font-gout;
+        font-size: 5em;   
+    }
+
+    h3 {
+        font-size:1.6em;
+    }
+
+    h2 {
+        background: linear-gradient(to right, #0da152 0%, #5ddb36 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+ }
+
+ /*-----------------------------------------------------------------*/
+  /*-----------------------ANIMATIONS------------------------------*/
+
+.underline {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+  
+ .underline:hover {
+    color: #000;
+    position: relative;
+}
+  
+.underline:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.1em;
+    border-radius: 90%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.underline:hover:before {
+    visibility: visible;
+   width: 100%;
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------MEDIA QUERIES / RESPONSIVE -------------------*/
+
+/*------TABLETTE-----*/
+
+  @media only screen and (max-width: 1200px){
+
+    body {
+        min-height:100%;
+        position: relative;
+        width: 90%;
+        display: flex;
+        margin:auto;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .block-menu {
+        box-shadow: 0 0 20px #bababa;
+        height: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0em;
+        padding: 2em;
+        margin: 5em;
+    }
+
+    .section-menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top:1.5em;
+        margin: 0em;
+    }
+   
+    .ligne-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em;
+    
+        p {
+            font-size: 0.8em;
+        }  
+    }
+
+    .titre-menu {
+        font-size: 1.6em;
+        padding-bottom: 1em;
+
+        .fa-music {
+           font-size: 40px;
+        }
+    }
+
+    .underline {
+        padding-top:1em;
+        font-size: 0.8em;
+    }
+
+    p {
+        font-family: $font-menu;
+        font-size: 1.2em; 
+    }
+
+    img {
+        width: 30%;
+        height: 50%;  
+    }
+
+/*TABLETTE  - MENUS SPECIFICITES*/
+
+    .menu-enchante-fin {
+        padding-top: 1em;
+        padding-bottom: 0em;
+    }     
+    
+    .menu-gout {
+
+       .menu-gout-titre {
+            font-size: 2em;
+       }
+    }
+
+    .menu-papilles{
+        .menu-papilles-titre {
+            font-size: 2em;
+        }
+    }
+
+    .menu-chic {
+        h3 {
+            padding-bottom: 2em;
+        }
+        .section-menu {
+            padding-top: 2em;;
+        }
+    }
+}
+  
+/*-----TELEPHONE-----*/
+
+@media only screen and (max-width: 767px){
+    
+    img {
+        width:35%;    
+        height: auto;
+    }
+
+    body {
+        height:auto;
+        width: 95%;
+        display: flex;
+        margin:auto;
+        flex-direction: column;
+        position: relative;
+        align-items: center; 
+    }
+
+    .block-menu {
+        box-shadow: 0 0 20px #bababa;
+        height: 80%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin:2em;
+        padding: 0.5em;
+        padding-top: 1em; 
+        padding-bottom: 1em;
+    }
+
+    .section-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top:1em;
+     }
+
+   
+    .ligne-menu {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        
+        p {
+            font-size: 0.9em;
+            text-align: left;
+            padding-left: 1em;
+            padding-right: 1em;
+        }    
+    }
+    
+    .titre-menu {
+        font-size: 1.5em;
+        padding-top: 1.6em;
+        padding-bottom: 1em;
+    }
+
+    /*TELEPHONE - MENU SPECIFICITES */
+
+    .menu-chic h3 {
+        font-size: 1.1em;
+
+        img {
+        width:25%;    
+        height: auto;
+        }
+    }
+
+    .menu-papilles {
+
+        .menu-papilles-titre{
+            font-size: 2em;   
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+
+    .menu-enchante h3 {
+        font-size: 1.2em;
+    }
+    
+    .menu-gout {
+
+        .menu-gout-titre {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+  }

@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/*---------------------------GENERAL---------------------------*/
+/* Couleurs/Polices principales du thème*/
+/* Mise en page générale du thème*/
+a {
+  text-decoration: none;
+}
+
+h1 {
+  letter-spacing: -0.07em;
+  color: #f0c92e;
+  font-size: 4em;
+}
+
+p {
+  font-size: 1.6em;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: lighter;
+  font-family: "Kalam";
+}
+
+h4 {
+  color: #f0c92e;
+  font-size: 1em;
+  letter-spacing: 0.01em;
+  font-weight: lighter;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h5 {
+  font-family: "Montserrat";
+  color: #f0c92e;
+  font-size: 1.5em;
+  font-weight: lighter;
+  letter-spacing: -0.03em;
+}
+
+body {
+  font-size: 20px;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #4e9182;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.grid {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5rem;
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu {
+  padding: 1em;
+  -webkit-box-shadow: 0 0 20px #bababa;
+          box-shadow: 0 0 20px #bababa;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.prochainement {
+  width: 25%;
+  height: 50px;
+  background-color: #4e9182;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  /*Va permettre au footer d'adherer au bas de la fenetre */
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #4e9182;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Montserrat";
+}
+
+/*---------------------------SPECIFIQUE AUX MENUS---------------------------*/
+/*-----ENCHANTED-----*/
+.enchante {
+  background-color: #ffe7e6;
+}
+
+.enchante .icon-music {
+  display: block;
+}
+
+.enchante .fa-music {
+  background: -webkit-gradient(linear, left top, right top, from(#f26fa4), to(#ff8d00));
+  background: linear-gradient(to right, #f26fa4 0%, #ff8d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.enchante p {
+  font-family: "Devonshire";
+  letter-spacing: 0.1em;
+  font-size: 1.6em;
+  color: black;
+}
+
+.enchante h3 {
+  color: black;
+  text-transform: uppercase;
+}
+
+/*-----CHIC-----*/
+.chic {
+  background-color: #faf0ff;
+}
+
+.chic p {
+  font-size: 1.6em;
+  font-family: "Croissant One";
+  background: -webkit-gradient(linear, left top, right top, from(#ff8d00), to(#9600ff));
+  background: linear-gradient(to right, #ff8d00 0%, #9600ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chic h3 {
+  font-family: "Cantata One";
+  color: #ff8d00;
+}
+
+/*-----PAPILLES-----*/
+.papilles {
+  background-color: #ebebeb;
+}
+
+.papilles p {
+  font-family: "Dancing Script";
+  background: -webkit-gradient(linear, left top, right top, from(#1255e3), to(#12d3e3));
+  background: linear-gradient(to right, #1255e3 0%, #12d3e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.papilles h3 {
+  color: #1255e3;
+}
+
+/*-----GOUT-----*/
+.gout {
+  background: #ffffff;
+}
+
+.gout p {
+  font-family: "Kaushan Script";
+  background: -webkit-gradient(linear, left top, right top, from(#0da152), to(#5ddb36));
+  background: linear-gradient(to right, #0da152 0%, #5ddb36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gout h3 {
+  color: #0da152;
+}
+
+/*-----MENTIONS LEGALES-----*/
+.block-mentions {
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.block-mentions .centre-mentions {
+  font-weight: bold;
+}
+
+.block-mentions h3 {
+  font-family: "Montserrat";
+  font-size: 1.6em;
+  text-align: center;
+  color: #f0c92e;
+}
+
+.block-mentions p {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+.block-mentions h4 {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Montserrat";
+  padding-bottom: 1em;
+}
+
+.centre-mentions {
+  text-align: center;
+  padding-top: 5em;
+}
+
+/*-----------------------------------------------------------------ANIMATIONS-----------------------------------------------------------------*/
+.zoom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.4;
+}
+
+h4:hover {
+  -webkit-animation: wiggle 0.8s;
+          animation: wiggle 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(3px, 3px) rotate(3.5deg);
+            transform: translate(3px, 3px) rotate(3.5deg);
+  }
+  25% {
+    -webkit-transform: translate(2px, 2px) rotate(-3deg);
+            transform: translate(2px, 2px) rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: translate(1px, 1px) rotate(3.5deg);
+            transform: translate(1px, 1px) rotate(3.5deg);
+  }
+  75% {
+    -webkit-transform: translate(2px, 2px) rotate(-3deg);
+            transform: translate(2px, 2px) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translate(3px, 3px) rotate(3.5deg);
+            transform: translate(3px, 3px) rotate(3.5deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(3px, 3px) rotate(3.5deg);
+            transform: translate(3px, 3px) rotate(3.5deg);
+  }
+  25% {
+    -webkit-transform: translate(2px, 2px) rotate(-3deg);
+            transform: translate(2px, 2px) rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: translate(1px, 1px) rotate(3.5deg);
+            transform: translate(1px, 1px) rotate(3.5deg);
+  }
+  75% {
+    -webkit-transform: translate(2px, 2px) rotate(-3deg);
+            transform: translate(2px, 2px) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translate(3px, 3px) rotate(3.5deg);
+            transform: translate(3px, 3px) rotate(3.5deg);
+  }
+}
+
+h5 span {
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+h5 span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+h5 span:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+/*----------MEDIA QUERIES / RESPONSIVE ----------*/
+/*TABLETTE*/
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: 100px;
+  }
+  body {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+  .grid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .prochainement {
+    width: 30%;
+    margin-top: 0;
+  }
+  .prochainement h5 {
+    font-size: 1.2em;
+  }
+}
+
+/*TELEPHONE*/
+@media only screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 80px;
+  }
+  body {
+    width: 95%;
+    font-size: 18px;
+  }
+  .menu {
+    height: 300px;
+    width: 90%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .prochainement {
+    width: 70%;
+    margin-top: 0;
+  }
+  .prochainement h5 {
+    font-size: 1.2em;
+  }
+  footer {
+    width: 100%;
+  }
+  footer h4 {
+    font-size: 0.8em;
+  }
+  /* TELEPHONE - MENTIONS LEGALES */
+  .block-mentions {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .block-mentions p {
+    font-size: 0.7em;
+  }
+  .block-mentions h4 {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

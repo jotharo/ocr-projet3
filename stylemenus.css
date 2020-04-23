@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/*---------------------------PAGES CSS DES MENUS---------------------------*/
+/* Couleurs/Polices principales du thème*/
+/* Mise en page générale du thème*/
+.block-menu {
+  -webkit-box-shadow: 0 0 20px #bababa;
+          box-shadow: 0 0 20px #bababa;
+  height: 100%;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3em;
+  padding: 6em;
+}
+
+.section-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2em;
+}
+
+.titre-menu {
+  font-size: 2em;
+  margin: 0em;
+}
+
+.ligne-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.ligne-menu p {
+  font-family: "Kalam";
+  font-size: 1.2em;
+}
+
+.ligne-menu .prix {
+  font-weight: bold;
+}
+
+img {
+  width: 33%;
+  height: auto;
+}
+
+.img-flipped {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/*---------------------------PAGE MENU---------------------------*/
+/*---------------------La note enchantée------------------------*/
+.menu-enchante {
+  background-color: #ffe7e6;
+}
+
+.menu-enchante h3 {
+  font-size: 1.6em;
+}
+
+.menu-enchante .ligne-menu {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.menu-enchante .menu-enchante-titre {
+  font-family: "Devonshire";
+  letter-spacing: 0.1em;
+}
+
+.menu-enchante .menu-enchante-titre .icon-music {
+  display: block;
+}
+
+.menu-enchante .fa-music {
+  background: -webkit-gradient(linear, left top, right top, from(#f26fa4), to(#ff8d00));
+  background: linear-gradient(to right, #f26fa4 0%, #ff8d00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-enchante .menu-enchante-sous-titre {
+  font-family: "Kalam";
+  color: black;
+}
+
+.menu-enchante .menu-enchante-fin {
+  font-family: "Devonshire";
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.menu-enchante .menu-enchante-fin .icon-music {
+  display: block;
+}
+
+.menu-enchante .menu-enchante-fin .fa-music {
+  background: -webkit-gradient(linear, left top, right top, from(#f26fa4), to(#ff8d00));
+  background: linear-gradient(to right, #f26fa4 0%, #ff8d00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*----------------------------PAGE MENU-------------------------------*/
+/*-----------------------Le chic à la française--------------------*/
+.menu-chic {
+  background-color: #faf0ff;
+}
+
+.menu-chic .menu-chic-titre {
+  font-family: "Croissant One";
+  background: -webkit-gradient(linear, left top, right top, from(#ff8d00), to(#9600ff));
+  background: linear-gradient(to right, #ff8d00 0%, #9600ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-chic .menu-chic-sous-titre {
+  font-family: "Cantata One";
+}
+
+.menu-chic h3 {
+  font-size: 1.1em;
+}
+
+.menu-chic .chic-part1 {
+  color: #ff8d00;
+}
+
+.menu-chic .chic-part2 {
+  color: #d307cf;
+}
+
+.menu-chic .chic-part3 {
+  color: #9600ff;
+}
+
+.menu-chic img {
+  height: 15px;
+}
+
+/*----------------------------PAGE MENU-------------------------------*/
+/*-----------------------Le délice des papilles--------------------*/
+.menu-papilles {
+  background-color: #ebebeb;
+  font-family: "Kalam";
+}
+
+.menu-papilles .menu-papilles-titre {
+  font-family: "Dancing Script";
+  font-size: 4em;
+}
+
+.menu-papilles h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#1255e3), to(#12d3e3));
+  background: linear-gradient(to right, #1255e3 0%, #12d3e3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-papilles h3 {
+  font-size: 1.6em;
+}
+
+/*----------------------------PAGE MENU-------------------------------*/
+/*-----------------------La palette du goût------------------------------*/
+.menu-gout {
+  background-color: #ebebeb;
+  font-family: "Kalam";
+}
+
+.menu-gout .menu-gout-titre {
+  font-family: "Kaushan Script";
+  font-size: 5em;
+}
+
+.menu-gout h3 {
+  font-size: 1.6em;
+}
+
+.menu-gout h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#0da152), to(#5ddb36));
+  background: linear-gradient(to right, #0da152 0%, #5ddb36 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------------ANIMATIONS------------------------------*/
+.underline {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.underline:hover {
+  color: #000;
+  position: relative;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.1em;
+  border-radius: 90%;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------MEDIA QUERIES / RESPONSIVE -------------------*/
+/*------TABLETTE-----*/
+@media only screen and (max-width: 1200px) {
+  body {
+    min-height: 100%;
+    position: relative;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-menu {
+    -webkit-box-shadow: 0 0 20px #bababa;
+            box-shadow: 0 0 20px #bababa;
+    height: auto;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0em;
+    padding: 2em;
+    margin: 5em;
+  }
+  .section-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5em;
+    margin: 0em;
+  }
+  .ligne-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0em;
+  }
+  .ligne-menu p {
+    font-size: 0.8em;
+  }
+  .titre-menu {
+    font-size: 1.6em;
+    padding-bottom: 1em;
+  }
+  .titre-menu .fa-music {
+    font-size: 40px;
+  }
+  .underline {
+    padding-top: 1em;
+    font-size: 0.8em;
+  }
+  p {
+    font-family: "Kalam";
+    font-size: 1.2em;
+  }
+  img {
+    width: 30%;
+    height: 50%;
+  }
+  /*TABLETTE  - MENUS SPECIFICITES*/
+  .menu-enchante-fin {
+    padding-top: 1em;
+    padding-bottom: 0em;
+  }
+  .menu-gout .menu-gout-titre {
+    font-size: 2em;
+  }
+  .menu-papilles .menu-papilles-titre {
+    font-size: 2em;
+  }
+  .menu-chic h3 {
+    padding-bottom: 2em;
+  }
+  .menu-chic .section-menu {
+    padding-top: 2em;
+  }
+}
+
+/*-----TELEPHONE-----*/
+@media only screen and (max-width: 767px) {
+  img {
+    width: 35%;
+    height: auto;
+  }
+  body {
+    height: auto;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-menu {
+    -webkit-box-shadow: 0 0 20px #bababa;
+            box-shadow: 0 0 20px #bababa;
+    height: 80%;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2em;
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .section-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1em;
+  }
+  .ligne-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .ligne-menu p {
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .titre-menu {
+    font-size: 1.5em;
+    padding-top: 1.6em;
+    padding-bottom: 1em;
+  }
+  /*TELEPHONE - MENU SPECIFICITES */
+  .menu-chic h3 {
+    font-size: 1.1em;
+  }
+  .menu-chic h3 img {
+    width: 25%;
+    height: auto;
+  }
+  .menu-papilles .menu-papilles-titre {
+    font-size: 2em;
+  }
+  .menu-papilles h3 {
+    font-size: 1.2em;
+  }
+  .menu-enchante h3 {
+    font-size: 1.2em;
+  }
+  .menu-gout .menu-gout-titre {
+    font-size: 2em;
+  }
+  .menu-gout h3 {
+    font-size: 1.2em;
+  }
+}
+/*# sourceMappingURL=stylemenus.css.map */
